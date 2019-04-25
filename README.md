@@ -9,7 +9,7 @@ Run tests with test-run-cli
 Example:
 + ```npm i -g test-run-cli```
 + ```test-run-cli run [unit | ingeration | api | components | system]```
-this command deploy if need app containers (with docker composer) to local machine 
+This command deploy, need application containers (with docker compose) to local docker machine 
 and run specific tests. You don’t need k8s or another tools. Need only app repo, 
 docker, docker-compose (in windows pc included in the default) and test-run-cli in local machine. 
 
