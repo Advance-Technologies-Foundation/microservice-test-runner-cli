@@ -43,5 +43,6 @@
 
 Локально выкачан только один [account-service](http://tscore-git.tscrm.com/bpmonline-designer/backend/account-service).
 После правок в account-service необходимо убедится что ничего не сломалось. 
-Для этого необходимо запустить [приемочные тесты](http://tscore-git.tscrm.com/AcceptanceTests/protractor) 
+Для этого необходимо запустить [приемочные тесты](http://tscore-git.tscrm.com/AcceptanceTests/protractor), в которых
+должен учавствовать локально изменный код из account-service. 
 
