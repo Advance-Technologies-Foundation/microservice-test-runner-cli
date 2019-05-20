@@ -48,11 +48,6 @@
 
 ##### Случай 2. Локальная разработка микросервиса с последующей прогонкой тестов, для всех зависимых серсвисов
 
-Микросервисы:
-* http://tscore-git.tscrm.com/bpmonline-designer/frontend
-* http://tscore-git.tscrm.com/bpmonline-designer/backend
-* http://tscore-git.tscrm.com/AcceptanceTests/protractor
-
 Локально выкачан только один [account-service](http://tscore-git.tscrm.com/bpmonline-designer/backend/account-service).
 После правок в account-service необходимо убедится что ничего не сломалось. 
 Для этого необходимо запустить поочередно все возможные тесты, которые проверят обратную совместимость.  
