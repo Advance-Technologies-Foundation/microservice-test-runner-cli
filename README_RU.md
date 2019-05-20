@@ -31,3 +31,17 @@
 * Мета-информация запуска теста содержит информацию о необходимых зависимостях для запуска этих тестов
 * Для запуска определенного типа тестов, билдяться и разварачивается ислючительно те контейнеры,
  которые необходимы
+
+#### Примеры использования
+
+##### Случай 1. Локальная разработка с последующей прогонкой риемочных тестов
+
+Микросервисы:
+* http://tscore-git.tscrm.com/bpmonline-designer/frontend
+* http://tscore-git.tscrm.com/bpmonline-designer/backend
+* http://tscore-git.tscrm.com/AcceptanceTests/protractor
+
+Локально выкачан только один [account-service](http://tscore-git.tscrm.com/bpmonline-designer/backend/account-service).
+После правок в account-service необходимо убедится что ничего сломалось. 
+Для этого необходимо запустить приемочные тесты для [репозитория](http://tscore-git.tscrm.com/AcceptanceTests/protractor) 
+
