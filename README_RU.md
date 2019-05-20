@@ -34,7 +34,7 @@
 
 #### Примеры использования
 
-##### Случай 1. Локальная разработка с последующей прогонкой риемочных тестов
+##### Случай 1. Локальная разработка с последующей прогонкой приемочных тестов
 
 Микросервисы:
 * http://tscore-git.tscrm.com/bpmonline-designer/frontend
@@ -42,6 +42,6 @@
 * http://tscore-git.tscrm.com/AcceptanceTests/protractor
 
 Локально выкачан только один [account-service](http://tscore-git.tscrm.com/bpmonline-designer/backend/account-service).
-После правок в account-service необходимо убедится что ничего сломалось. 
-Для этого необходимо запустить приемочные тесты для [репозитория](http://tscore-git.tscrm.com/AcceptanceTests/protractor) 
+После правок в account-service необходимо убедится что ничего не сломалось. 
+Для этого необходимо запустить [приемочные тесты](http://tscore-git.tscrm.com/AcceptanceTests/protractor) 
 
