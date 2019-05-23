@@ -7,7 +7,10 @@
 
 ##### docker-compose
 
-Поддерживает разворачивание из нескольких .yaml файлов, - [пример](example/docker-compose).   
+Поддерживает разворачивание из нескольких `.yaml` файлов, - [пример](example/docker-compose).  
+
+Также [поддерживает](https://docs.docker.com/compose/compose-file/#depends_on) возможность указывать от каких
+ сервисов зависит конкретный сервис `depends_on`. 
 
 ##### kubernetes with helm
  
