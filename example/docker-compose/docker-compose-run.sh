@@ -1,1 +1,1 @@
-docker-compose -f docker-compose.service-a.yaml -f docker-compose.service-b.yaml up
+docker-compose -f service-a.yaml -f service-b.yaml up
