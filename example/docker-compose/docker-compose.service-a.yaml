@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  data:
+    # image: tianon/true:latest (docker/fig#919)
+    image: busybox:latest
+    volumes:
+      - /data
+    command: /bin/echo
+  redis:
+    image: busybox:latest
+    command: /bin/echo "redis"
