@@ -34,27 +34,46 @@ dependencies:
 
 #### Предполагаемая структура репозитория сервиса
 
-**A**
+**Вариант A**
 ```
 ├── ...
 ├── deploy
+
+|   ├── .Dockerfile
+|   |
 |   ├── helm
-|   |   |__ templates
-|   |   |__ values.yaml
-|   |   |__ ...
+|   |   |── templates
+|   |   |── values.yaml # переменные окружения (зависимости)
+|   |   |── ...
 |   |
 |   └── docker-compose
-|       |__ docker-compose.yaml
-|       |__ env.yaml
+|   |   |── docker-compose.yaml
+|   |   |── env.yaml # переменные окружения (зависимости)
+|   |
+|   └── .buid
+|       |── info.yaml
+|       |── deps.yaml
 |
 ├── README.md
 ```
 
-**B**
+**info.yaml**
+```$xslt
+name: account-service
+image: bpmonline/account-service
 ```
-├── ...
-├── deploy
-|   ├── helm
-|   └── docker-compose
-├── README.md
+
+**deps.yaml**
+```
+dependencies:
+    - name: permission-service
+      git: http://tscore-git/bpmonline-designer/backend/permission-service
+    - name: mongodb
+      git: http://tscore-git/bpmonline-designer/infrastructure/mongodb
+```
+
+**Вариант B**
+
+```
+...
 ```
