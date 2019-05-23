@@ -1,11 +1,7 @@
 version: "3.7"
 services:
-  logs:
-    # image: tianon/true:latest (docker/fig#919)
+  b:
     image: busybox:latest
-    volumes:
-      - /var/log/hipache
-      - /var/log/nginx
-    command: /bin/echo
+    command: /bin/echo "service b"
     depends_on:
       - redis
